@@ -1,0 +1,882 @@
+[
+    {
+        "_id": "1a2b3c4d5e",
+        "from": "New York",
+        "to": "Washington D.C.",
+        "busType": "Express",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T12:00:00",
+        "fare": 50.0,
+        "totalSeats": 40,
+        "available": 25,
+        "reservedSeats": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "_id": "2b3c4d5e6f",
+        "from": "New York",
+        "to": "New Jersey",
+        "busType": "Express",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T11:00:00",
+        "fare": 30.0,
+        "totalSeats": 35,
+        "available": 15,
+        "reservedSeats": [
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "_id": "3c4d5e6f7g",
+        "from": "New York",
+        "to": "North Carolina",
+        "busType": "Express",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T17:00:00",
+        "fare": 100.0,
+        "totalSeats": 50,
+        "available": 20,
+        "reservedSeats": [
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "_id": "4d5e6f7g8h",
+        "from": "New York",
+        "to": "Virginia",
+        "busType": "Luxury",
+        "departure": "2024-06-16T10:00:00",
+        "arrival": "2024-06-16T18:00:00",
+        "fare": 120.0,
+        "totalSeats": 30,
+        "available": 10,
+        "reservedSeats": [
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "_id": "5e6f7g8h9i",
+        "from": "Washington D.C.",
+        "to": "New York",
+        "busType": "Standard",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T12:00:00",
+        "fare": 55.0,
+        "totalSeats": 40,
+        "available": 30,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "6f7g8h9i0j",
+        "from": "Washington D.C.",
+        "to": "New Jersey",
+        "busType": "Standard",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T13:00:00",
+        "fare": 45.0,
+        "totalSeats": 35,
+        "available": 18,
+        "reservedSeats": [
+            16,
+            17,
+            18
+        ]
+    },
+    {
+        "_id": "7g8h9i0j1k",
+        "from": "Washington D.C.",
+        "to": "North Carolina",
+        "busType": "Express",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 90.0,
+        "totalSeats": 45,
+        "available": 22,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "8h9i0j1k2l",
+        "from": "Washington D.C.",
+        "to": "Virginia",
+        "busType": "Luxury",
+        "departure": "2024-06-16T11:00:00",
+        "arrival": "2024-06-16T13:00:00",
+        "fare": 60.0,
+        "totalSeats": 25,
+        "available": 5,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "9i0j1k2l3m",
+        "from": "New Jersey",
+        "to": "New York",
+        "busType": "Express",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T08:00:00",
+        "fare": 25.0,
+        "totalSeats": 40,
+        "available": 20,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "0j1k2l3m4n",
+        "from": "New Jersey",
+        "to": "Washington D.C.",
+        "busType": "Standard",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T12:00:00",
+        "fare": 55.0,
+        "totalSeats": 30,
+        "available": 12,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "1k2l3m4n5o",
+        "from": "New Jersey",
+        "to": "North Carolina",
+        "busType": "Express",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 85.0,
+        "totalSeats": 35,
+        "available": 15,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "2l3m4n5o6p",
+        "from": "New Jersey",
+        "to": "Virginia",
+        "busType": "Luxury",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T13:00:00",
+        "fare": 95.0,
+        "totalSeats": 20,
+        "available": 5,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "3m4n5o6p7q",
+        "from": "North Carolina",
+        "to": "New York",
+        "busType": "Express",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T18:00:00",
+        "fare": 100.0,
+        "totalSeats": 50,
+        "available": 25,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "4n5o6p7q8r",
+        "from": "North Carolina",
+        "to": "Washington D.C.",
+        "busType": "Standard",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 80.0,
+        "totalSeats": 40,
+        "available": 20,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "5o6p7q8r9s",
+        "from": "North Carolina",
+        "to": "New Jersey",
+        "busType": "Express",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 85.0,
+        "totalSeats": 45,
+        "available": 18,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "6p7q8r9s0t",
+        "from": "North Carolina",
+        "to": "Virginia",
+        "busType": "Luxury",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T13:00:00",
+        "fare": 95.0,
+        "totalSeats": 30,
+        "available": 10,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "7q8r9s0t1u",
+        "from": "Virginia",
+        "to": "New York",
+        "busType": "Express",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T16:00:00",
+        "fare": 95.0,
+        "totalSeats": 35,
+        "available": 15,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "8r9s0t1u2v",
+        "from": "Virginia",
+        "to": "Washington D.C.",
+        "busType": "Standard",
+        "departure": "2024-06-16T10:00:00",
+        "arrival": "2024-06-16T12:00:00",
+        "fare": 45.0,
+        "totalSeats": 30,
+        "available": 20,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "9s0t1u2v3w",
+        "from": "Virginia",
+        "to": "New Jersey",
+        "busType": "Express",
+        "departure": "2024-06-16T11:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 70.0,
+        "totalSeats": 25,
+        "available": 10,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "0t1u2v3w4x",
+        "from": "Virginia",
+        "to": "North Carolina",
+        "busType": "Luxury",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T13:00:00",
+        "fare": 85.0,
+        "totalSeats": 20,
+        "available": 5,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "0u2v3w4x5y",
+        "from": "New York",
+        "to": "Washington D.C.",
+        "busType": "Standard",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T10:00:00",
+        "fare": 45.0,
+        "totalSeats": 35,
+        "available": 18,
+        "reservedSeats": [
+            16,
+            17,
+            18
+        ]
+    },
+    {
+        "_id": "1v3w4x5y6z",
+        "from": "New York",
+        "to": "New Jersey",
+        "busType": "Luxury",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T09:00:00",
+        "fare": 35.0,
+        "totalSeats": 25,
+        "available": 12,
+        "reservedSeats": [
+            19,
+            20,
+            21
+        ]
+    },
+    {
+        "_id": "2w4x5y6z7a",
+        "from": "New York",
+        "to": "North Carolina",
+        "busType": "Standard",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T18:00:00",
+        "fare": 95.0,
+        "totalSeats": 40,
+        "available": 22,
+        "reservedSeats": [
+            22,
+            23,
+            24
+        ]
+    },
+    {
+        "_id": "3x5y6z7a8b",
+        "from": "New York",
+        "to": "Virginia",
+        "busType": "Express",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T17:00:00",
+        "fare": 110.0,
+        "totalSeats": 50,
+        "available": 20,
+        "reservedSeats": [
+            25,
+            26,
+            27
+        ]
+    },
+    {
+        "_id": "4y6z7a8b9c",
+        "from": "Washington D.C.",
+        "to": "New York",
+        "busType": "Luxury",
+        "departure": "2024-06-16T10:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 65.0,
+        "totalSeats": 30,
+        "available": 15,
+        "reservedSeats": [
+            28,
+            29,
+            30
+        ]
+    },
+    {
+        "_id": "5z7a8b9c0d",
+        "from": "Washington D.C.",
+        "to": "New Jersey",
+        "busType": "Express",
+        "departure": "2024-06-16T11:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 50.0,
+        "totalSeats": 40,
+        "available": 18,
+        "reservedSeats": [
+            31,
+            32,
+            33
+        ]
+    },
+    {
+        "_id": "6a8b9c0d1e",
+        "from": "Washington D.C.",
+        "to": "North Carolina",
+        "busType": "Luxury",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 95.0,
+        "totalSeats": 45,
+        "available": 20,
+        "reservedSeats": [
+            34,
+            35,
+            36
+        ]
+    },
+    {
+        "_id": "7b9c0d1e2f",
+        "from": "Washington D.C.",
+        "to": "Virginia",
+        "busType": "Standard",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T11:00:00",
+        "fare": 30.0,
+        "totalSeats": 25,
+        "available": 10,
+        "reservedSeats": [
+            37,
+            38,
+            39
+        ]
+    },
+    {
+        "_id": "8c0d1e2f3g",
+        "from": "New Jersey",
+        "to": "New York",
+        "busType": "Standard",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T09:00:00",
+        "fare": 20.0,
+        "totalSeats": 30,
+        "available": 12,
+        "reservedSeats": [
+            40,
+            41,
+            42
+        ]
+    },
+    {
+        "_id": "9d1e2f3g4h",
+        "from": "New Jersey",
+        "to": "Washington D.C.",
+        "busType": "Luxury",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T12:00:00",
+        "fare": 60.0,
+        "totalSeats": 25,
+        "available": 8,
+        "reservedSeats": [
+            43,
+            44,
+            45
+        ]
+    },
+    {
+        "_id": "0e2f3g4h5i",
+        "from": "New Jersey",
+        "to": "North Carolina",
+        "busType": "Standard",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T17:00:00",
+        "fare": 70.0,
+        "totalSeats": 35,
+        "available": 18,
+        "reservedSeats": [
+            46,
+            47,
+            48
+        ]
+    },
+    {
+        "_id": "1f3g4h5i6j",
+        "from": "New Jersey",
+        "to": "Virginia",
+        "busType": "Express",
+        "departure": "2024-06-16T10:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 55.0,
+        "totalSeats": 20,
+        "available": 10,
+        "reservedSeats": [
+            49,
+            50,
+            51
+        ]
+    },
+    {
+        "_id": "2g4h5i6j7k",
+        "from": "North Carolina",
+        "to": "New York",
+        "busType": "Luxury",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T19:00:00",
+        "fare": 110.0,
+        "totalSeats": 50,
+        "available": 20,
+        "reservedSeats": [
+            52,
+            53,
+            54
+        ]
+    },
+    {
+        "_id": "3h5i6j7k8l",
+        "from": "North Carolina",
+        "to": "Washington D.C.",
+        "busType": "Express",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 85.0,
+        "totalSeats": 45,
+        "available": 15,
+        "reservedSeats": [
+            55,
+            56,
+            57
+        ]
+    },
+    {
+        "_id": "4i6j7k8l9m",
+        "from": "North Carolina",
+        "to": "New Jersey",
+        "busType": "Standard",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 75.0,
+        "totalSeats": 35,
+        "available": 10,
+        "reservedSeats": [
+            58,
+            59,
+            60
+        ]
+    },
+    {
+        "_id": "5j7k8l9m0n",
+        "from": "North Carolina",
+        "to": "Virginia",
+        "busType": "Luxury",
+        "departure": "2024-06-16T10:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 95.0,
+        "totalSeats": 30,
+        "available": 10,
+        "reservedSeats": [
+            61,
+            62,
+            63
+        ]
+    },
+    {
+        "_id": "6k8l9m0n1o",
+        "from": "Virginia",
+        "to": "New York",
+        "busType": "Standard",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 85.0,
+        "totalSeats": 40,
+        "available": 15,
+        "reservedSeats": [
+            64,
+            65,
+            66
+        ]
+    },
+    {
+        "_id": "7l9m0n1o2p",
+        "from": "Virginia",
+        "to": "Washington D.C.",
+        "busType": "Express",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T10:00:00",
+        "fare": 35.0,
+        "totalSeats": 25,
+        "available": 12,
+        "reservedSeats": [
+            67,
+            68,
+            69
+        ]
+    },
+    {
+        "_id": "8m0n1o2p3q",
+        "from": "Virginia",
+        "to": "New Jersey",
+        "busType": "Luxury",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T13:00:00",
+        "fare": 75.0,
+        "totalSeats": 20,
+        "available": 8,
+        "reservedSeats": [
+            70,
+            71,
+            72
+        ]
+    },
+    {
+        "_id": "9n1o2p3q4r",
+        "from": "New York",
+        "to": "Washington D.C.",
+        "busType": "Luxury",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T10:00:00",
+        "fare": 70.0,
+        "totalSeats": 25,
+        "available": 12,
+        "reservedSeats": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "_id": "0o2p3q4r5s",
+        "from": "New York",
+        "to": "New Jersey",
+        "busType": "Standard",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T09:00:00",
+        "fare": 25.0,
+        "totalSeats": 40,
+        "available": 20,
+        "reservedSeats": [
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "_id": "1p3q4r5s6t",
+        "from": "New York",
+        "to": "North Carolina",
+        "busType": "Luxury",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T18:00:00",
+        "fare": 120.0,
+        "totalSeats": 30,
+        "available": 10,
+        "reservedSeats": [
+            7,
+            8,
+            9
+        ]
+    },
+    {
+        "_id": "2q4r5s6t7u",
+        "from": "New York",
+        "to": "Virginia",
+        "busType": "Standard",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T17:00:00",
+        "fare": 95.0,
+        "totalSeats": 50,
+        "available": 20,
+        "reservedSeats": [
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "_id": "3r5s6t7u8v",
+        "from": "Washington D.C.",
+        "to": "New York",
+        "busType": "Express",
+        "departure": "2024-06-16T10:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 65.0,
+        "totalSeats": 30,
+        "available": 15,
+        "reservedSeats": [
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "_id": "4s6t7u8v9w",
+        "from": "Washington D.C.",
+        "to": "New Jersey",
+        "busType": "Luxury",
+        "departure": "2024-06-16T11:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 75.0,
+        "totalSeats": 20,
+        "available": 8,
+        "reservedSeats": [
+            16,
+            17,
+            18
+        ]
+    },
+    {
+        "_id": "5t7u8v9w0x",
+        "from": "Washington D.C.",
+        "to": "North Carolina",
+        "busType": "Standard",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 80.0,
+        "totalSeats": 35,
+        "available": 10,
+        "reservedSeats": [
+            19,
+            20,
+            21
+        ]
+    },
+    {
+        "_id": "6u8v9w0x1y",
+        "from": "Washington D.C.",
+        "to": "Virginia",
+        "busType": "Express",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T09:00:00",
+        "fare": 40.0,
+        "totalSeats": 25,
+        "available": 10,
+        "reservedSeats": [
+            22,
+            23,
+            24
+        ]
+    },
+    {
+        "_id": "7v9w0x1y2z",
+        "from": "New Jersey",
+        "to": "New York",
+        "busType": "Luxury",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T10:00:00",
+        "fare": 35.0,
+        "totalSeats": 30,
+        "available": 12,
+        "reservedSeats": [
+            25,
+            26,
+            27
+        ]
+    },
+    {
+        "_id": "8w0x1y2z3a",
+        "from": "New Jersey",
+        "to": "Washington D.C.",
+        "busType": "Express",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T13:00:00",
+        "fare": 50.0,
+        "totalSeats": 40,
+        "available": 18,
+        "reservedSeats": [
+            28,
+            29,
+            30
+        ]
+    },
+    {
+        "_id": "9x1y2z3a4b",
+        "from": "New Jersey",
+        "to": "North Carolina",
+        "busType": "Luxury",
+        "departure": "2024-06-16T10:00:00",
+        "arrival": "2024-06-16T18:00:00",
+        "fare": 100.0,
+        "totalSeats": 35,
+        "available": 15,
+        "reservedSeats": [
+            31,
+            32,
+            33
+        ]
+    },
+    {
+        "_id": "0y2z3a4b5c",
+        "from": "New Jersey",
+        "to": "Virginia",
+        "busType": "Standard",
+        "departure": "2024-06-16T11:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 75.0,
+        "totalSeats": 25,
+        "available": 10,
+        "reservedSeats": [
+            34,
+            35,
+            36
+        ]
+    },
+    {
+        "_id": "1z3a4b5c6d",
+        "from": "North Carolina",
+        "to": "New York",
+        "busType": "Express",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T16:00:00",
+        "fare": 95.0,
+        "totalSeats": 45,
+        "available": 15,
+        "reservedSeats": [
+            37,
+            38,
+            39
+        ]
+    },
+    {
+        "_id": "2a4b5c6d7e",
+        "from": "North Carolina",
+        "to": "Washington D.C.",
+        "busType": "Luxury",
+        "departure": "2024-06-16T07:00:00",
+        "arrival": "2024-06-16T15:00:00",
+        "fare": 105.0,
+        "totalSeats": 40,
+        "available": 20,
+        "reservedSeats": [4,5,6,8]
+    },
+    {
+        "_id": "3b5c6d7e8f",
+        "from": "North Carolina",
+        "to": "New Jersey",
+        "busType": "Standard",
+        "departure": "2024-06-16T08:00:00",
+        "arrival": "2024-06-16T16:00:00",
+        "fare": 80.0,
+        "totalSeats": 35,
+        "available": 12,
+        "reservedSeats": [4,5,6,8]
+    },
+    {
+        "_id": "4c6d7e8f9g",
+        "from": "North Carolina",
+        "to": "Virginia",
+        "busType": "Express",
+        "departure": "2024-06-16T09:00:00",
+        "arrival": "2024-06-16T13:00:00",
+        "fare": 85.0,
+        "totalSeats": 30,
+        "available": 10,
+        "reservedSeats": [4,5,6,8]
+    },
+    {
+        "_id": "5d7e8f9g0h",
+        "from": "Virginia",
+        "to": "New York",
+        "busType": "Luxury",
+        "departure": "2024-06-16T06:00:00",
+        "arrival": "2024-06-16T14:00:00",
+        "fare": 95.0,
+        "totalSeats": 35,
+        "available": 12,
+        "reservedSeats": [4,5,6,8]
+    }
+]
