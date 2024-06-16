@@ -1,0 +1,106 @@
+<form [formGroup]="paymentForm"
+  class="container col-xl-6 col-lg-6 col-md-9 mt-4 py-2 px-4 animate__animated animate__fadeInRight"
+  (ngSubmit)="confirmPayment()">
+  <h3 class="mb-2 pb-2 border-bottom">Payment</h3>
+
+
+  <!-- Card-Type -->
+
+  <div class="form-group row mb-3">
+    <label class="col-sm-4 col-form-label ps-5">Card Type*</label>
+    <div class="col-2 form-check">
+      <label class="form-check-label m-2 " for="visa">
+        <input class="form-check-input " formControlName="cardType" type="radio" name="cardType" id="visa" value="visa">
+        Visa
+      </label>
+    </div>
+    <div class="col form-check">
+      <label class="form-check-label m-2 " for="mastercard">
+        <input class="form-check-input " formControlName="cardType" type="radio" name="cardType" id="mastercard"
+          value="mastercard">
+        Master Card
+      </label>
+    </div>
+  </div>
+
+  <!-- Card Number -->
+
+  <div class="form-group row mb-3">
+    <label for="cardnumber" class="col-sm-4 col-form-label ps-5">Card number*</label>
+    <div class="col-sm-6">
+      <input type="text" formControlName="cardNumber" class="form-control" autocomplete="off">
+      <div *ngIf="cardNumber?.touched && cardNumber?.invalid" class="text-danger">
+        <div *ngIf="cardNumber?.errors?.['required']">Card Number is required</div>
+        <div *ngIf="cardNumber?.errors?.['pattern']">Invalid Card Number</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Name On The Card -->
+
+  <div class="form-group row mb-3">
+    <label for="cardname" class="col-sm-4 col-form-label ps-5">Name on the card*</label>
+    <div class="col-sm-6">
+      <input type="text" formControlName="cardName" class="form-control" autocomplete="off">
+      <div *ngIf="cardName?.touched && cardName?.invalid" class="text-danger">
+        <div *ngIf="cardName?.errors?.['required']">Name on the card is required</div>
+        <div *ngIf="cardName?.errors?.['pattern']">Invalid name</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CVV -->
+
+  <div class="form-group row mb-3">
+    <label for="cvv" class="col-sm-4 col-form-label ps-5">CVV*</label>
+    <div class="col-sm-6">
+      <input type="password" formControlName="cvv" class="form-control" autocomplete="off">
+      <div *ngIf="cvv?.touched && cvv?.invalid" class="text-danger">
+        <div *ngIf="cvv?.errors?.['required']">Card number is required</div>
+        <div *ngIf="cvv?.errors?.['pattern']">Invalid CVV</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Expiry -->
+
+  <div class="form-group row mb-3">
+    <label for="expiry" class="col-sm-4 col-form-label ps-5">Expiry*</label>
+    <div class="col-sm-3">
+      <select class="form-select" formControlName="expiry" name="expiry">
+        <option value="" selected>Month</option>
+        <option *ngFor="let month of months">{{ month }}</option>
+      </select>
+      <div *ngIf="expiry?.touched && expiry?.invalid" class="text-danger">
+        <div *ngIf="expiry?.errors?.['required']">Month is required</div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <select class="form-select" formControlName="expiry" name="expiry">
+        <option selected value="">Year</option>
+        <option *ngFor="let year of years">{{ year }}</option>
+      </select>
+
+      <div *ngIf=" expiry?.touched && expiry?.invalid" class="text-danger">
+        <div *ngIf="expiry?.errors?.['required']">Year is required</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group row mb-3">
+    <label for="amount" class="col-sm-4 col-form-label ps-5">Amount</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" disabled value="{{bookingDetailsIn.totalAmount}}">
+    </div>
+  </div>
+
+  <!-- Submit-->
+
+  <div class="form-group offset-sm-4">
+    <input type="submit" class="btn btn-primary m-3" (click)="confirmPayment()" [disabled]="paymentForm.invalid"
+      value="Pay now">
+  </div>
+
+</form>
+
+

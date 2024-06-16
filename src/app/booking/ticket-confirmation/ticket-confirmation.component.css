@@ -1,0 +1,61 @@
+.ticket {
+    max-width: 940px;
+    min-width: 540px;
+    transform: scale3d(1, 1, 1) rotate3d(0, 1, 0, 0deg);
+  }
+  
+  h1 {
+    font-style: italic;
+  }
+  
+  .aclass {
+    background: red;
+  }
+  
+  .ticket:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../../../assets/Images/soft-grunge-texture.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 999;
+  }
+  
+  .ticket__head {
+    background: #ce292e;
+  }
+  
+  .ticket__body {
+    background: #f3f3f3;
+  }
+  
+  .ticket__body-logo {
+    position: relative;
+  }
+  
+  .ticket__body-logo:before {
+    content: "";
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    position: absolute;
+    background-image: url("../../../assets/Images/ATLogoEdited-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.7;
+  }
+  
+  .download {
+    max-width: 940px;
+    min-width: 540px;
+    height: 250px;
+  }
+
+  .material-icons{
+    cursor: pointer;
+  }
+  

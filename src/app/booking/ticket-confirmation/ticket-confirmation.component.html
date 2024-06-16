@@ -1,0 +1,64 @@
+<div class="ticket mt-5 mx-auto" id="gpdf">
+  <div class="ticket__head">
+    <h1 class="text-center text-white mb-0">Anil Travels</h1>
+  </div>
+  <div class="ticket__body row p-2 mx-0">
+    <div class="col-xl-2 col-lg-2 col-md-3 py-5 d-flex align-items-center">
+      <!-- QR CODE -->
+      <!-- <ngx-qrcode [elementType]="elementType" value={{details}} cssClass="aclass" errorCorrectionLevel="L">
+        </ngx-qrcode> -->
+    </div>
+    <div class="ticket__body-data align-items-center col-xl-6 col-lg-6 col-md-5">
+      <div class="row">
+        <div class="col-8">
+          <div class="fs-6">Passenger names</div>
+          <div class="fs-6 d-flex flex-wrap">
+            <strong *ngFor="let p of ticketDetails.passengerName;let
+                    i=index">{{p}}{{i === ticketDetails.passengerName.length - 1 ? '' : ', '}}
+            </strong>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="fs-6">Travel Date</div>
+          <div class="fs-6"><strong>{{ticketDetails.date}}</strong></div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-8">
+          <div class="fs-6">From</div>
+          <div class="fs-6"><strong>{{ticketDetails.from}}</strong></div>
+        </div>
+        <div class="col-4">
+          <div class="fs-6">To</div>
+          <div class="fs-6"><strong>{{ticketDetails.to}}</strong></div>
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-4">
+          <div class="fs-6">Seats</div>
+          <div class="fs-6"><strong>{{ticketDetails.totalSelectedSeats}}</strong></div>
+        </div>
+        <div class="col-4">
+          <div class="fs-6">Bus Type</div>
+          <div class="fs-6"><strong>{{ticketDetails.busType}}</strong></div>
+        </div>
+        <div class="col-4">
+          <div class="fs-6">Seat Numbers</div>
+          <div class="fs-6 d-flex flex-wrap"><strong *ngFor="let s of ticketDetails.seats;let
+                    i=index">{{s}}{{i === ticketDetails.seats.length - 1 ? '' : ', '}}</strong></div>
+        </div>
+      </div>
+      <div class="my-3 me-5">
+        <div class="fs-6 text-end"><strong>Total: {{ticketDetails.totalAmount}}.00</strong></div>
+      </div>
+
+    </div>
+    <div class="ticket__body-logo col-xl-4 col-lg-4 col-md-4">
+      <div class="logo"></div>
+    </div>
+  </div>
+</div>
+<div class="mt-1 mx-auto download">
+  <button class="btn btn-primary" (click)="downloadAsPDF()">Download</button>
+</div>

@@ -1,0 +1,100 @@
+<div class="col-xl-7 col-lg-9 col-md-11 col-sm-12 mx-auto my-5">
+
+    <form [formGroup]="planTripForm">
+      <div class="row ms-2">
+  
+        <!-- From Location -->
+        <div class="form-group col-3">
+          <label class="text-white form-label">From</label>
+          <select name="from" class="form-select form-select-lg p-1" id="from" formControlName="from">
+            <option>Select Place</option>
+            <option *ngFor="let p of places">{{p}}</option>
+          </select>
+        </div>
+  
+        <!-- To Location -->
+  
+        <div class="form-group col-3">
+          <label class="text-white form-label">To</label>
+          <select name="to" class="form-select form-select-lg p-1" id="to" formControlName="to">
+            <option>Select Place</option>
+            <option *ngFor="let p of places">{{p}}</option>
+          </select>
+        </div>
+  
+        <!-- Travel Date -->
+  
+        <div class="form-group col-3">
+          <label class="text-white form-label" for="">Travel Date</label>
+          <input type="date" min="{{currentDate|date:'yyyy-MM-dd'}}" placeholder="dd/mm/yyyy" class="form-control"
+            autocomplete="off" name="date" formControlName="date">
+        </div>
+  
+        <!-- Plan Trip -->
+  
+        <div class="col-3" *ngIf="check">
+          <button class="btn btn-lg btn-danger text-white mx-3 mt-4 px-4" type="submit" [disabled]="planTripForm.invalid"
+            (click)="planTrip()">
+            Plan trip</button>
+        </div>
+  
+        <!-- Edit -->
+  
+        <div class="col-1" *ngIf="!check">
+          <button class="btn btn-lg btn-info text-white mx-3 mt-4 px-3" (click)="edit()">
+            Edit</button>
+        </div>
+  
+        <!-- Reset -->
+  
+        <div class="col-1" *ngIf="!check">
+          <button class="btn btn-lg btn-secondary text-white ms-3 mt-4 px-3" type="reset" (click)="reset()">
+            Reset</button>
+        </div>
+  
+      </div>
+  
+    </form>
+  
+  </div>
+  
+  <!-- Error Message -->
+  
+  <div *ngIf="error" class="alert alert-danger text-center col-xl-7 col-lg-8 col-md-10 mx-auto">
+    <strong>Boarding and Destination shouldn't be same.</strong>
+  </div>
+  
+  <div *ngIf="!response" class="empty"></div>
+  
+  <!-- Bus Details Table -->
+  <div class="table-data col-xl-8 col-lg-8 col-md-11 mx-auto my-5 animate__animated animate__backInUp"
+    *ngIf="response && !error">
+    <div class="row">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Bus Type</th>
+            <th>Deptarture</th>
+            <th>Arrival</th>
+            <th>Date</th>
+            <th>Seats Available</th>
+            <th>Fare</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let b of busDetails">
+            <td>{{b.busType}}</td>
+            <td>{{b.departure}}</td>
+            <td>{{b.arrival}}</td>
+            <td>{{date}}</td>
+            <td>{{b.available}}</td>
+            <td>{{b.fare}}</td>
+            <td><button class="btn btn-danger btn-sm" (click)="viewSeats(b)">View Seats</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  

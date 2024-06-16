@@ -1,0 +1,96 @@
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+  }
+  
+  * {
+    color: black;
+  }
+  
+  .container-fluid {
+    height: 500px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    cursor: pointer;
+  }
+  
+  input {
+    background-color: white;
+  }
+  
+  input[type=text] {
+    padding: 0.3rem 0.2rem;
+  }
+  
+  input[type=radio] {
+    margin-top: 10px;
+  }
+  
+  .select_seats {
+    width: 110%;
+  }
+  
+  .select_seats ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .select_seats ul li {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 3px;
+  
+  }
+  
+  .select_seats ul li span {
+    color: white;
+  }
+  
+  
+  .select_seats_hover ul li span:hover {
+    /* IE 9 */
+    -ms-transform: scale(1.5);
+    /* Safari 3-8 */
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    animation-duration: 2s;
+    animation-delay: 0.9s;
+    color: yellow;
+  }
+  
+  .select_seats ul li span.Reserved {
+    color: red;
+  }
+  
+  .select_seats ul li span.Selected {
+    color: yellow;
+  }
+  
+  :host>>>.tooltip-inner {
+    background: white;
+    color: black;
+  }
+  
+  .summary {
+    background-color: white;
+    overflow-y: auto;
+    max-height: 480px;
+  }
+  
+  .booking {
+    margin-bottom: 100px;
+  }
+  

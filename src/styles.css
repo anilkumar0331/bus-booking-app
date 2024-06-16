@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/Images/cover-image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Calibri';
+  font-weight: normal;
+  font-size: large;
+}

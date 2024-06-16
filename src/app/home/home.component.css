@@ -1,0 +1,61 @@
+* {
+    color: white;
+  }
+  
+  blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    color: white;
+  }
+  
+  blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: yellow;
+  }
+  nav {
+    background-color: #E83F44;
+  }
+  
+  img {
+    width: 80px;
+    /* width: 10%; */
+  }
+  
+  .title {
+    font-style: italic;
+  }
+  
+  
+  .d-flex div {
+    flex: 1;
+  }
+  
+  .animate__animated {
+    animation-duration: 3s;
+  }
+  
+  .container h2:after {
+    display: block;
+    height: 2px;
+    background-color: #E83F44;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 297px;
+  }
+
+  

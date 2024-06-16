@@ -1,0 +1,28 @@
+.container-fluid {
+    background-color: #E83F44;
+  }
+  
+  img {
+    width: 80px;
+  }
+  
+  h2 {
+    font-style: italic;
+  }
+  
+  .logo, .material-icons {
+    cursor: pointer;
+  }
+  
+  
+  :host>>>.tooltip-inner {
+    background: white;
+    color: black;
+  }
+  
+  :host>>>.pending .tooltip-arrow:before,
+  :host>>>.tooltip.left .pending .tooltip-arrow::before {
+    border-left-color: #eba413;
+    color: yellow;
+  }
+  

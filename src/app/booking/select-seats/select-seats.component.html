@@ -1,0 +1,120 @@
+<div class="container-fluid pt-5 mb-5 animate__animated animate__fadeInRight">
+
+
+  <div class="row justify-content-center">
+
+    <div class="col-xl-9 col-lg-10 col-md-10 mb-5 booking">
+
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-8 mb-5 mx-auto">
+          <div class="select_seats select_seats_hover col-xl-5 col-lg-5 pe-5">
+            <ul>
+              <li *ngFor="let item of seats" (click)="selectSeats(item.seatno)">
+                <span class="material-icons" [ngClass]="{Reserved : UnavailableSeats.includes(item.seatno), 
+                        Selected : item.isSelected}" tooltip="{{item.seatno}}">
+                  airline_seat_recline_extra
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="select_seats d-flex justify-content-center mt-4">
+            <ul class="d-flex">
+              <li class="me-5">
+                <span class="material-icons">
+                  airline_seat_recline_extra
+                </span>
+                <span>Available</span>
+              </li>
+              <li class="mx-4">
+                <span class="material-icons Selected">
+                  airline_seat_recline_extra
+                </span>
+                <span>Selected</span>
+              </li>
+              <li class="ms-5">
+                <span class="material-icons Reserved">
+                  airline_seat_recline_extra
+                </span>
+                <span>Reserved</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Booking Summary -->
+
+        <div class="offset-xl-1 col-xl-5 offset-lg-1 col-lg-5 pt-2 summary rounded">
+          <form #f="ngForm" (ngSubmit)="f.valid && confirmBooking(f)">
+            <h3 class="border-bottom my-2">Booking Summary</h3>
+            <div class="row my-2">
+              <div class="col-6">From</div>
+              <div class="col-6">{{busDetails.from}} </div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6">To</div>
+              <div class="col-6">{{busDetails.to}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6">Travel Date</div>
+              <div class="col-6">{{busDetails.date}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6">Bus Type</div>
+              <div class="col-6">{{busDetails.busType}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6">Seat Numbers:</div>
+              <div class="col-6 d-flex flex-wrap">
+                <span *ngFor="let s of seatsSelection;let
+                    i=index">{{s}}{{i === seatsSelection.length - 1 ? '' : ', '}}</span>
+
+              </div>
+            </div>
+            <div *ngFor="let seat of seatsSelection" class="row my-2">
+              <div class="col-6">
+                <input type="text" required ngModel name="{{'S' + seat}}" #name="ngModel" pattern="^[a-zA-Z ]*$"
+                  class="form-control text-dark ps-2" placeholder="Name">
+              </div>
+              <div class="col-6">
+                <input type="radio" required class="form-check-input" id="{{'male' + seat}}" value="Male"
+                  name="{{'gender' + seat}}">
+                <label class="form-check-label me-3 ms-1 mt-1" for="{{'male' + seat}}">
+                  Male
+                </label>
+                <input type="radio" required class="form-check-input" id="{{'female' + seat}}" value="Female"
+                  name="{{'gender' + seat}}">
+                <label class="form-check-label ms-1 mt-1" for="{{'female' + seat}}">Female
+                </label>
+
+              </div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6">Total seats</div>
+              <div class="col-6">{{totalSelectedSeats}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6">Fare</div>
+              <div class="col-6">{{totalFare}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6">Service tax</div>
+              <div class="col-6">{{serviceTax}}</div>
+            </div>
+            <div class="row my-2">
+              <div class="col-6">Total Charges</div>
+              <div class="col-6">{{totalCharge}}</div>
+            </div>
+
+
+            <div class="row mt-2">
+              <button *ngIf="!formvalid" class="btn mt-3 ml-3 btn-primary py-2 btn-sm btn-block" disabled
+                value="submit">Confirm</button>
+
+              <button *ngIf="formvalid" class="btn mt-3 ml-3 btn-primary py-2 btn-sm btn-block"
+                value="submit">Confirm</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
