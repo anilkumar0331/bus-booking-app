@@ -100,14 +100,6 @@ export class PaymentComponent implements OnInit {
   //Sending Booking Summary to Ticket component
 
   confirmPayment() {
-    this.busService
-      .updateBusDetails({
-        id: this.bookingDetailsIn.id,
-        booked: this.bookingDetailsIn.seats,
-        available: this.bookingDetailsIn.available,
-      })
-      .subscribe();
-
     this.bookingSummary = {
       from: this.bookingDetailsIn.from,
       to: this.bookingDetailsIn.to,

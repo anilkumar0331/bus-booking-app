@@ -8,7 +8,7 @@ import { SelectSeatsComponent } from './booking/select-seats/select-seats.compon
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
   },
   {
@@ -26,12 +26,7 @@ const routes: Routes = [
   {
     path: 'ticket-confirmation',
     component: TicketConfirmationComponent,
-  },
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
+  }
 ];
 
 

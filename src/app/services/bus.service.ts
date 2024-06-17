@@ -11,11 +11,14 @@ export class BusService {
 
   private jsonUrl = 'assets/bus-details.json';
 
+  private logo = 'assets/Images/ATLogoEdited.jpg';
+
   getBusDetails() : Observable<Bus[]>{
     return this.http.get<Bus[]>(this.jsonUrl);
   }
 
-  updateBusDetails(bus: any) {
-    return this.http.patch('http://localhost:3000/api/updatebusdetails', bus);
+  getLogo(){
+    return this.logo;
   }
+
 }

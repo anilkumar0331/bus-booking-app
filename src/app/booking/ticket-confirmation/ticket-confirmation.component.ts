@@ -26,9 +26,6 @@ export class TicketConfirmationComponent implements OnInit {
     this.details = JSON.stringify(this.value);
   }
 
-  // elementType = NgxQrcodeElementTypes.URL;
-  // correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
-
   public downloadAsPDF() {
     let element: HTMLElement | null = document.getElementById('gpdf');
 
